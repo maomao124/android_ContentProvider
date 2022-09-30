@@ -21,7 +21,7 @@ public class StudentContent implements BaseColumns
     /**
      * 这里的名称必须与AndroidManifest.xml里的android:authorities保持一致
      */
-    public static final String AUTHORITIES = "mao.android_ContentProvider.provider.studentProvider";
+    public static final String AUTHORITIES = "mao.android_ContentProvider.provider.StudentProvider";
 
     /**
      * 内容提供器的外部表名

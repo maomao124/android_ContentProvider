@@ -13,6 +13,13 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.Android_ContentProvider"
             tools:targetApi="31">
+
+        <provider
+                android:name=".provider.StudentProvider"
+                android:authorities="mao.android_ContentProvider.provider.StudentProvider"
+                android:enabled="true"
+                android:exported="true" />
+
         <activity
                 android:name=".MainActivity"
                 android:exported="true">
