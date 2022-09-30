@@ -18,6 +18,10 @@ import android.provider.BaseColumns;
 
 public class StudentContent implements BaseColumns
 {
+    /*
+       类需要继承BaseColumns
+     */
+
     /**
      * 这里的名称必须与AndroidManifest.xml里的android:authorities保持一致
      */
@@ -28,11 +32,16 @@ public class StudentContent implements BaseColumns
      */
     public static final String TABLE_NAME = StudentDao.TABLE_NAME;
 
+
+    /**
+     * 路径
+     */
+    public static final String path = "/student";
+
     /**
      * 访问内容提供器的URI
      */
-    public static final Uri CONTENT_URI = Uri.parse("content://" + AUTHORITIES + "/student");
-
+    public static final Uri CONTENT_URI = Uri.parse("content://" + AUTHORITIES + path);
 
 
     //下面是该表的各个字段名称
